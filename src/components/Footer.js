@@ -1,6 +1,16 @@
-const Footer = () => {
+function Footer  ({theme, setTheme})  {
+
+    const switchTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light')
+    }
+
+
+
   return (
-    <div>Footer</div>
+    <div>
+        footer component <br/>
+        <button onClick={switchTheme}>Switch theme</button>
+    </div>
   )
 }
 

@@ -1,6 +1,8 @@
-const Header = () => {
+function Header  ({theme}) {
   return (
-    <div>Header</div>
+    <div>
+        Current theme = {theme}
+    </div>
   )
 }
 

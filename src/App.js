@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div>
-      <Header/>
-      <Footer/>
+      <Header theme={theme}/>
+      <Footer theme={theme} setTheme={setTheme}/>
     </div>
   );
 }
