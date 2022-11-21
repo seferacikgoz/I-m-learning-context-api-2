@@ -1,12 +1,12 @@
 import ThemeSwitcher from "./ThemeSwitcher"
 
-function Footer  ({theme, setTheme})  {
+function Footer  ()  {
 
    
   return (
     <div>
         footer component <br/>
-        <ThemeSwitcher theme={theme} setTheme={setTheme}/>
+        <ThemeSwitcher />
        
     </div>
   )

@@ -1,4 +1,8 @@
-function ThemeSwitcher  ({theme, setTheme}) {
+import { MainContext, useContext } from "../context"
+
+function ThemeSwitcher  () {
+
+    const {theme, setTheme} = useContext(MainContext)
 
     const switchTheme = () => {
         setTheme(theme === 'light' ? 'dark' : 'light')

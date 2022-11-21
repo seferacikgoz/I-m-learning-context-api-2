@@ -12,10 +12,15 @@ function App() {
     document.body.className = theme
   },[theme])
 
+  const data = {
+    theme,
+    setTheme
+  }
+
   return (
     <MainContext.Provider value={data}>
-      <Header theme={theme}/>
-      <Footer theme={theme} setTheme={setTheme}/>
+      <Header />
+      <Footer />
     </MainContext.Provider>
   );
 }
