@@ -6,6 +6,7 @@ import "./style.css"
 
 function App() {
 
+  const [logoText, setLogoText] = useState("erbilen.net")
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
@@ -14,7 +15,9 @@ function App() {
 
   const data = {
     theme,
-    setTheme
+    setTheme,
+    logoText,
+    setLogoText
   }
 
   return (
