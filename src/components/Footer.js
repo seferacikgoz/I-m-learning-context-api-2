@@ -1,15 +1,13 @@
+import ThemeSwitcher from "./ThemeSwitcher"
+
 function Footer  ({theme, setTheme})  {
 
-    const switchTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light')
-    }
-
-
-
+   
   return (
     <div>
         footer component <br/>
-        <button onClick={switchTheme}>Switch theme</button>
+        <ThemeSwitcher theme={theme} setTheme={setTheme}/>
+       
     </div>
   )
 }

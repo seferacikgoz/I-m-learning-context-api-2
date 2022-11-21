@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { MainContext } from "./context";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./style.css"
@@ -12,10 +13,10 @@ function App() {
   },[theme])
 
   return (
-    <div>
+    <MainContext.Provider value={data}>
       <Header theme={theme}/>
       <Footer theme={theme} setTheme={setTheme}/>
-    </div>
+    </MainContext.Provider>
   );
 }
 
